@@ -39,4 +39,20 @@ int amount = counter.cantNumerosPares();
 // I check the amount is the expected one
 assertEquals(amount, 1);
 }
+
+@Test
+public void testImparNumbers() {
+	// Obtiene la cantidad de numeros impares
+	int amount = counter.cantNumerosImpares();
+	// I check the amount is the expected one
+	assertEquals(amount, 9);
+	}
+
+@Test
+public void testNumerosMultiplos() {
+	// Obtiene la cantidad de numeros impares
+	int amount = counter.cantMultiplosDe(5);
+	// I check the amount is the expected one
+	assertEquals(amount, 1);
+	}
 }
