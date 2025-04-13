@@ -24,6 +24,20 @@ public class Counter {
 		
 	}
 	
+	///////////////////////////////PUNTO 3//////////////////////////////////////
 	
-
+	public int multiploDe(int x, int y) {//no puedo hacer que funcione bien
+		
+		int multiplo = 1000;
+		while (!this.esMultiplo(x, multiplo) || !this.esMultiplo(y, multiplo) ) {
+			multiplo--;
+		}
+		
+		return multiplo;
+	}
+	
+	private boolean esMultiplo(int num1, int num2) {
+		return (num1 % num2) == 0;
+	}
+	
 }

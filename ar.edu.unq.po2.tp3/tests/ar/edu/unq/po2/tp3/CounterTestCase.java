@@ -55,4 +55,5 @@ public void testNumerosMultiplos() {
 	// I check the amount is the expected one
 	assertEquals(amount, 1);
 	}
+
 }
