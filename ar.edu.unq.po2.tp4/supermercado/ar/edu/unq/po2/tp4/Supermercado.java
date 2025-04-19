@@ -1,14 +1,13 @@
 package ar.edu.unq.po2.tp4;
 
 import java.util.ArrayList;
-
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public class Supermercado {
 	
 	private String nombre;
 	private String direccion;
-	java.util.List<Producto> productos = new ArrayList<Producto>();
+	private List<Producto> productos = new ArrayList<Producto>();
 	
 	public Supermercado(String numero, String direccion) {
 		this.nombre = numero;
