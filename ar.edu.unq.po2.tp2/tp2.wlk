@@ -28,7 +28,7 @@ class Empresa {
     }
 
     method liquidarSueldos() {
-        empleados.forEach({empleado => empleado.cobrar() and self.agregarReciboDe(empleado) })
+        empleados.forEach({empleado => self.agregarReciboDe(empleado) })
     }
 
     method agregarReciboDe(empleado) {
@@ -55,7 +55,6 @@ class Empleado {
     var property estadoCivil
     var property fechaDeNacimiento
     var property sueldoBasico
-    var sueldoCobrado = 0
 
     method sueldoBruto()
 
@@ -68,14 +67,6 @@ class Empleado {
     method edad() {
         const fechaDeHoy = new Date()
         return fechaDeHoy.year() - self.fechaDeNacimiento().year()
-    }
-
-    method cobrar() {
-        sueldoCobrado += self.sueldoNeto()
-    }
-
-    method sueldoCobrado() { //GETTER
-        return sueldoCobrado
     }
 
     method obraSocial() {
