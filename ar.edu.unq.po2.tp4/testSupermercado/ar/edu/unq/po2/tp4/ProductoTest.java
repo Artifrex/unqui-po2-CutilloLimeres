@@ -1,6 +1,5 @@
 package supermercado;
 
-import Supermercado.java;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
