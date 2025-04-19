@@ -34,5 +34,4 @@ public class Supermercado {
 		return productos.stream().mapToDouble(producto -> producto.getPrecio()).sum();
 	}
 	
-	
 }

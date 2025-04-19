@@ -2,7 +2,7 @@ package ar.edu.unq.po2.tp4;
 
 public class Producto {
 	
-	private Double precio;
+	protected Double precio;
 	private Boolean esPrecioCuidado = false;
 	private String nombre;
 	
@@ -38,3 +38,4 @@ public class Producto {
 	}
 
 }
+
