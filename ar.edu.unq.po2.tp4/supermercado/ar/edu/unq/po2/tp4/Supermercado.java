@@ -9,8 +9,8 @@ public class Supermercado {
 	private String direccion;
 	private List<Producto> productos = new ArrayList<Producto>();
 	
-	public Supermercado(String numero, String direccion) {
-		this.nombre = numero;
+	public Supermercado(String nombre, String direccion) {
+		this.nombre = nombre;
 		this.direccion = direccion;
 	}
 	
