@@ -1,7 +1,7 @@
 package ar.edu.unq.po2.tp5;
 
 
-public class Producto implements CobrableEnCaja {
+public class Producto implements RegistrableEnCaja {
 	
 	protected String nombre;
 	private int stock;
@@ -15,7 +15,6 @@ public class Producto implements CobrableEnCaja {
 	
 	public void registrar() { //preguntar como hacer esto sin que producto conozca a caja y caer
 							  // en el if
-		Caja.agregarProducto(this);
 		this.stock--;		
 	}
 		
